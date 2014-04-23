@@ -1,0 +1,61 @@
+<div class="container-fluid" ng-show='show'>
+	<div class="row">
+		<div class="col-md-12 goBack">
+			<a href="#listShows"><i class="fa fa-arrow-circle-o-left icon"></i></a>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+			<div class="row">
+				<div class="col-md-12">
+					<img src="{{show.images.poster}}" class="img-responsive" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="col-md-8">
+			<div class="row">
+				<div class="col-md-12">
+					<h1>{{show.title}}</h1>
+					<small>Next episode {{show.nextEpisode !== 0 && show.nextEpisode || 'soon'  | date:'MMMM d'}}</small>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<p>{{show.overview}}</p>
+				</div>
+			</div>
+			<div class="row" ng-repeat="e in show.episodes | orderBy:'-episode'">
+				<div class="col-md-12 episode">
+					<div class="row"></div>
+					<div ng-click="loadTorrents(show.title, e.season, e.episode, 'HDTV')">
+						<h4>{{e.title}}</h4>
+						<small>{{e.airedDate | date:'MMMM d'}}</small>
+						<p>Episode {{e.episode}}</p>
+					</div>
+					<p ng-show="e.noTorrent">No torrent found. sorry!</p>
+					<div class="episodeInfo" ng-show="e.torrentHDTV.peers">
+						
+						<p>{{e.overview}}</p>
+						<div class="row torrentData">
+							<div class="col-md-2">
+								<p>Peers: {{e.torrentHDTV.peers}}</p>
+							</div>
+							<div class="col-md-3 col-md-offset-6">
+								<button type="button" class="btn btn-default" ng-click="playTorrent(e.torrentHDTV.torrentURL)">Play episode</button>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<button type="button" class="btn btn-default" ng-click="loadTorrents(show.title, e.season, e.episode, '720p')">Experimental HD 720p</button>
+								<small>requires VLC</small>
+							</div>
+							<div class="col-md-6">
+								<p ng-click="playTorrent(e.torrent720p.torrentURL)">{{e.torrent720p.title}}</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

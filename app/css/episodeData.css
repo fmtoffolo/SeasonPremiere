@@ -1,0 +1,29 @@
+.episode-data{
+	color: black;
+	background-color: white;
+	padding-top: 50px;
+}
+
+.episode-data .data .col-md-12{
+	background-color: white !important;
+}
+
+.episode-data .playBox{
+	height: auto;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.episode-data .playBox img{
+
+}
+
+.episode-data .subs{
+	font-size: 0.8em;
+	background-color: white;
+}
+
+.alldata{
+	background-color: white !important;
+}

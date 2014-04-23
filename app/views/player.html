@@ -1,0 +1,15 @@
+<a class="goBack transparent" href=""><i class="fa fa-arrow-circle-o-left icon"></i></a>
+<i class="fa fa-arrows-v resize transparent"></i>
+<div class="buffer text-center" ng-show="buffer">
+	<div class="content">
+		<h1>Buffering until streaming is available. Good luck!</h1>
+		<div class="progress progress-striped active">
+			<div class="progress-bar"  role="progressbar" aria-valuenow="{{progress}}" aria-valuemin="0" aria-valuemax="100" style="width: {{progress}}%">
+				<span class="sr-only">{{progress}} Complete</span>
+			</div>
+		</div>
+		<h4>Downloading from {{connectedPeers}} sources at {{speed}} kb/second</h4>
+	</div>
+</div>
+<uivideo/> 
+

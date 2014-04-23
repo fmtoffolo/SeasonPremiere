@@ -1,0 +1,81 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+
+html, body, .video
+{
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+	cursor: default;
+	background-color: black;
+}
+
+/*general thangs*/
+
+/*go back button*/
+
+.goBack{
+	position: fixed;
+	top: 20px;
+	left: 20px;
+	font-size: 4em;
+	width: auto;
+	height: auto;
+	display: block;
+	z-index: 30;
+	color: white;
+	text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+}
+
+.goBack:hover{
+	opacity: 1;
+	color: white;
+}
+
+.transparent{
+	opacity: 0;
+	-webkit-transition: opacity 0.2s ease;
+}
+
+.bold{
+	font-weight: 700;
+}
+
+.light{
+	font-weight: 300;
+}
+
+/*loading spinner*/
+.loading{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	color: white;
+}
+
+.loading i{
+	font-size: 10em;
+	-webkit-animation-name: spinner;
+	-webkit-animation-duration: 4s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes spinner{
+	from{-webkit-transform: rotate(0deg);}
+	to{-webkit-transform: rotate(359deg);}
+}
+
+
+.resize{
+	position: fixed;
+	top: 10px;
+	right: 15px;
+	font-size: 1.2em;
+	width: auto;
+	height: auto;
+	display: block;
+	z-index: 30;
+	color: white;
+	-webkit-transform: rotate(45deg);
+	text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+}

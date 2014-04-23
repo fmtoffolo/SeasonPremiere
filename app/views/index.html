@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8">
+		<title>seasonpremiere</title>
+		<!-- css and fonts-->
+		<link rel="stylesheet" href="../css/vendor/bootstrap.css">
+		<link rel="stylesheet" href="../css/main.css">
+		<link rel="stylesheet" href="../css/player.css">
+		<link rel="stylesheet" href="../css/uniqueShow.css">
+		<link rel="stylesheet" href="../css/listShows.css">
+		<link rel="stylesheet" href="../css/episodeData.css">
+		<link rel="stylesheet" href="../js/vendor/video-js/video-js.css">
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+		
+	</head>
+		<body ng-app="seasonPremiere" ng-view  class="viewContainer">
+		<!-- view insertion -->
+		<!-- <div ></div> -->
+		<!-- vendor -->
+		<script src="../js/vendor/angular.min.js"></script>
+		<script src="../js/vendor/angular-resource.js"></script>
+		<script src="../js/vendor/angular-route.js"></script>
+		<script src="../js/vendor/xml2json.js"></script>
+		<script src="../js/vendor/date.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+		<!-- loading app, controllers and factories -->
+		<script src="../js/index.js"></script>
+		<script src="../js/routes.js"></script>
+		<script src="../js/directives/uiVideo.js"></script>
+		<script src="../js/controllers/listShows.js"></script>
+		<script src="../js/controllers/uniqueShow.js"></script>
+		<script src="../js/controllers/episode.js"></script>
+		<script src="../js/controllers/player.js"></script>
+		<script src="../js/factories/torrentData.js"></script>
+		<script src="../js/factories/selectedShow.js"></script>
+		<script src="../js/factories/cache.js"></script>
+		<script src="../js/factories/getShowInfo.js"></script>
+		<script src="../js/factories/getEpisode.js"></script>
+		<!-- video player -->
+		<script src="../js/vendor/video-js/video.dev.2.js"></script>
+	</body>
+</html>

@@ -1,0 +1,67 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	cursor: default;
+}
+
+
+/*HOME*/
+.text-center{
+	text-align: center;
+}
+
+.leftSidebar .logo{
+	font-weight: 300;
+	font-size: 1.3em;
+}
+
+	.leftSidebar .logo span{
+		font-weight: 700;
+	}
+
+
+.posterBlock{
+	margin-top:15px;
+	margin-bottom: 15px;
+	cursor: pointer;
+}
+
+.searchShow{
+	margin-top: 25px;
+	margin-bottom: 10px;
+}
+
+.posterimg{
+	min-height: 198px;
+	min-width: 134px;
+}
+
+/*Unique Show*/
+.posterLeft{
+	width: 50%;
+	height: 100%;
+}
+
+.episode{
+	border-bottom: 1px solid #428bca;
+	cursor: pointer;
+}
+
+.episode:hover{
+	background-color: #428bca;
+	color: white;
+}
+
+.goBack{
+	margin: 5px 0px;
+	font-size: 3em;
+}
+
+.episodeInfo{
+	padding-bottom: 15px;
+}
+
+.torrentData{
+	margin-top: 20px;
+}

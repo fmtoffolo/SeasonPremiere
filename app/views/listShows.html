@@ -1,0 +1,36 @@
+<div class="loading text-center	" ng-hide="trendingShows">
+	<i class="fa fa-cog"></i>
+	<h2 class="light">Loading popular shows.</h2>
+	<h3 class="light">It might take a few seconds.</h3>
+</div>
+
+<i class="fa fa-arrows-v resize"></i>
+
+<div class="loading text-center	" ng-hide="dataOK">
+	<h3 class="light">Could not connect to database. Try again in a few minutes.</h3>
+</div>
+
+<div class="container-fluid listShows">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="row">
+				<div class="col-md-3 col-md-offset-1">
+					<h2><span class="light">Season</span> Premiere</h2>
+				</div>
+				<div class="col-md-6">
+					<input class="form-control searchShow" placeholder="Search the list and find your show" type="text" ng-model="search.title">
+				</div>
+			</div>
+			<div class="row" ng-show="trendingShows">
+				<div ng-repeat="show in trendingShows | filter:search | limitTo:36" class="col-md-2 posterBlock">
+					<a href="" ng-click="goToShow(show.title,show.tvdb_id,show.season)">
+					<img class="posterImg img-responsive" ng-src="{{show && show.images.poster || ''}}" alt="">
+					</a>
+					<small class="bold">{{show.title}}</small>
+					<br>
+					<small>{{show.lastAired | date:'EEEE, MMMM d'}}</small>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

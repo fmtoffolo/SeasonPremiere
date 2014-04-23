@@ -1,0 +1,126 @@
+/*Unique Show*/
+.generalContainer{
+	min-height: 100%;
+	height: auto;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	color: white;
+	background-color: black;
+	position: fixed;
+	top:0;
+	left: 0;
+}
+
+
+/*Main title*/
+.mainContent{
+	margin-top: 27%;
+	color: white;
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.29) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.29))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.29) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.29) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.29) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.29) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#4a000000',GradientType=0 ); /* IE6-9 */
+
+}
+
+
+/*show summary and episodes tiles*/
+.withBackground{
+	background: rgba(255,255,255,1);
+	color: black;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+}
+
+.moreSpace{
+	line-height: 200%;
+}
+
+.title{
+	font-size: 6em;
+	color:white;
+	font-weight: 300;
+	text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+}
+
+/*Arrange boxes according to position*/
+.episode{
+	cursor: pointer;
+	color: black;
+	padding: 15px 0;
+}
+
+.episode:nth-child(odd){
+	cursor: pointer;
+	color: black;
+	padding-right: 15px;
+}
+
+.episode:nth-child(even){
+	cursor: pointer;
+	color: black;
+	padding-left: 15px;
+}
+
+/*Arrange section*/
+.episode section{
+	background-color: white;
+	padding: 20px;
+}
+
+.episode img{
+	width: 100%;
+}
+
+.episodeInfo{
+	padding-bottom: 15px;
+}
+
+.torrentData{
+	margin-top: 20px;
+}
+
+
+/*Arrange play box*/
+.playBox{
+	position: relative;
+	background-color: black;
+	margin-top: 10px;
+	width: 430px;
+	height: 242px;
+}
+
+.playBox img{
+	opacity: 0.5;
+	-webkit-transition: opacity 0.5s ease;
+	width: 430px;
+	height: 242px;
+}
+
+.playBox i{
+	position: absolute;
+	top: 16px;
+	left:125px;
+	font-size: 15em;
+	color: white;
+	opacity: 0.3;
+	-webkit-transition: opacity 0.5s ease;
+}
+
+.playBox:hover i{
+	opacity: 0.8;
+}
+
+.playBox:hover img{
+	opacity: 1;
+}
+
+.title span{
+font-size: 0.5em;
+}
+

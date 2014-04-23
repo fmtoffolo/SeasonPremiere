@@ -1,0 +1,46 @@
+<div class="generalContainer" ng-show='dataOK' ng-style="{'background': 'black url('+ show.images.fanart + ') no-repeat top center fixed', 'background-size':'cover'}"></div>
+
+<i class="fa fa-arrows-v resize"></i>
+
+<a href="#show" class="goBack"><i class="fa fa-arrow-circle-o-left icon"></i></a>
+
+<div class="loading text-center	" ng-hide="dataOK">
+	<i class="fa fa-cog"></i>
+	<h2 class="light">Searching for episode torrent and subtitles</h2>
+</div>
+
+<div class="container episode-data" ng-show="dataOK">
+	<div class="row">
+		<div class="col-md-12">
+			<h2 class="title">{{episodeData.title}}</h2>
+		</div>
+	</div>
+
+	<div class="row data">
+		<div class="col-md-12">
+			<div class="playBox text-center" ng-click="playTorrent()">
+				<img ng-src="{{episodeData && episodeData.image || ''}}" alt="">
+				<i class="fa fa-play-circle-o"></i>
+			</div>
+		</div>
+	</div>
+	<div class="row data">
+		<div class="col-md-12">
+			<p>{{episodeData.overview}}</p>
+		</div>
+	</div>
+	<div class="row data">
+		<div class="col-md-12">
+			<h4>Available subtitles</h4>
+		</div>
+
+	</div>
+	<div class="row">
+		<div class="col-md-1 subs" ng-repeat="n in subtitleData">
+			<p>{{n.language}}</p>
+		</div>
+	</div>
+
+</div>
+
+

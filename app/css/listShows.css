@@ -1,0 +1,34 @@
+/*HOME*/
+.text-center{
+	text-align: center;
+}
+
+.leftSidebar .logo{
+	font-weight: 300;
+	font-size: 1.3em;
+}
+
+	.leftSidebar .logo span{
+		font-weight: 700;
+	}
+
+
+.posterBlock{
+	margin-top:15px;
+	margin-bottom: 15px;
+	cursor: pointer;
+	min-height: 386px;
+}
+
+.searchShow{
+	margin-top: 25px;
+	margin-bottom: 10px;
+}
+
+.posterimg{
+
+}
+
+.listShows{
+	color: white;
+}
