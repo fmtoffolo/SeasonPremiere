@@ -29,7 +29,7 @@ I force it because jslint throws lots of errors. Mostly spaces...
 
 ##Use it
 If you just want to check it out, you can download it from here:
-[HERE](https://www.google.com)
+[HERE](https://drive.google.com/file/d/0B3UCa-XuXdbsS29SVkNCR2xCNTg/edit?usp=sharing)
 
  
  
