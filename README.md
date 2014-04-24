@@ -4,6 +4,9 @@ SeasonPremiere
 A TV show streamer using some APIs and peerflix. It is just a hobby and proof of concept.
 It still needs lots of work.
 
+It is my first project(medium size) using angular so I'm pretty sure the code is garbage. Quite a learning experience.
+
+
 ##The app uses
  - Peerflix
  - Opensubtitles-client to get subtitles from Open Subtitles
