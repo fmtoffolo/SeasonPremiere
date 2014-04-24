@@ -1,23 +1,23 @@
 {
-  "name": "SeasonPremiere",
-  "main": "views/index.html",
-  "version": "0.0.1",
-  "single-instance": true,
-  "window": {
-    "title": "SeasonPremiere",
-    "width": 1280,
-    "height": 720,
-    "min_width": 1280,
-    "min_height": 720,
-    "toolbar": true
-  },
-  "chromium-args": "--child-clean-exit",
-  "dependencies": {
-    "adm-zip": "^0.4.4",
-    "iconv-lite": "~0.2.11",
-    "jschardet": "~1.1.0",
-    "opensubtitles-client": "~1.1.4",
-    "peerflix": "^0.7.0",
-    "showsearcher": "^0.1.24"
-  }
+    "name": "SeasonPremiere",
+    "main": "views/index.html",
+    "version": "0.0.1",
+    "single-instance": true,
+    "window": {
+        "title": "SeasonPremiere",
+        "width": 1280,
+        "height": 720,
+        "min_width": 1280,
+        "min_height": 720,
+        "toolbar": false
+    },
+    "chromium-args": "--child-clean-exit",
+    "dependencies": {
+        "adm-zip": "^0.4.4",
+        "iconv-lite": "~0.2.11",
+        "jschardet": "~1.1.0",
+        "opensubtitles-client": "~1.1.4",
+        "peerflix": "^0.7.0",
+        "showsearcher": "^0.1.24"
+    }
 }

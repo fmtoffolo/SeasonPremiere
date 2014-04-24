@@ -24,7 +24,11 @@ app.controller('episode', function($scope, $http, $location, selectedShow, getSh
         })
         .
     catch (function(error) {
-        console.log('something went wrong');
+        $scope.$apply(function() {
+            console.log('something went wrong');
+            $location.path('show');
+        });
+
     });
 
     // //function to call when "play me"
