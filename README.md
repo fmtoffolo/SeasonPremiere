@@ -13,7 +13,7 @@ It is my first project(medium size) using angular so I'm pretty sure the code is
  - ShowSearcher to get torrent data from Kickass.
  - Trakt.tv api to get shows data.
  - Various libraries like date.js, videoJS, jQuery.
- - Inspired by popcorn time, and used some of its code mostly for the subtitles encoding. But in the end I forced the encoding directly from opensubtitles so not much was used. I did used the already built nodewebkit distributions to have h264 support.
+ - Inspired by popcorn time, and used some of its code mostly for the subtitles encoding. But in the end I forced the encoding directly from opensubtitles so not much was used. I did use the already built nodewebkit distributions to have h264 support.
  
  
 ##How does it work?
